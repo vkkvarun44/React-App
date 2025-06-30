@@ -10,6 +10,8 @@
  * 
  */
 
+import React from "react";
+import { createRoot } from "react-dom/client";
 
 
 const parent = React.createElement(
@@ -35,8 +37,11 @@ const parent = React.createElement(
     ]
 );
 
-console.log(parent);
+showHTML()
 
-let root = ReactDOM.createRoot(document.getElementById("root"));
+function showHTML(){
+    console.log(parent);
 
-root.render(parent);
+    let root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(parent);
+}
